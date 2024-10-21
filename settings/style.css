@@ -1,0 +1,70 @@
+body {
+  background-color: #2b2b2b;
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 50px;
+  margin: 0;
+  padding-top: 60px;  /* Adjust to match header height */
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2b2b2b;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  text-align: center;
+  margin-top: 20%;
+  overflow-y: scroll;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+  #container {
+    margin-top: 50%;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 10px 0;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+li:hover {
+  color: #2b2b2b;
+  background-color: white;
+}
+
+/* Custom scrollbar styles */
+#container::-webkit-scrollbar {
+  width: 12px;
+}
+
+#container::-webkit-scrollbar-track {
+  background: #444; 
+}
+
+#container::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 20px; 
+  border: 3px solid #444; 
+}
+
+#container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}

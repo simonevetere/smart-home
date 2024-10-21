@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Automation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="redirect-dot" onclick="window.location.href='/bot'">
+    <img src="/img/robot.png" alt="Robot" />
+  </div>
+    <div class="container">
+        <a href="/riscaldamento" class="category"><img src="/img/heater.png" style="width:20px"><br>Riscaldamento</a>
+        <a href="/luci" class="category"><img src="/img/bulb.png" style="width:20px"><br>Luci</a>
+        <a href="/sicurezza" class="category"><img src="/img/camera.png" style="width:20px"><br>Sicurezza</a>
+        <a href="/energia" class="category"><img src="/img/electr.png" style="width:20px"><br>Energia</a>
+        <a href="/audio" class="category"><img src="/img/sound.png" style="width:20px"><br>Audio</a>
+        <a href="/domotica-generale" class="category"><img src="/img/domotica.png" style="width:20px"><br>Domotica</a>
+        <div class="qrcode" id="qrcode"></div>
+    </div>
+  <script src="/librerie/qrcode.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

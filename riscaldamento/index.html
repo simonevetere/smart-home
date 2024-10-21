@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Riscaldamento</title>
+  <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css'>
+  <link rel='stylesheet' href='https://www.thing-it.com/thing-it/css/thing-it-portal.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:700,400|Titillium+Web:700i,700,600,400i,400'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.roundslider/1.0/roundslider.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <script src="/librerie/qrcode.min.js"></script>
+  <link rel="icon" href="/img/heater.png" type="image/x-icon">
+</head>
+<body>
+  <div id="redirect-dot" onclick="window.location.href='/bot'">
+    <img src="/img/robot.png" alt="Robot" />
+  </div>
+  <div id="back-dot" onclick="window.location.href='/?refresh=version'">
+    <img src="/img/Back.png" alt="Back" />
+  </div>
+  <div class="qrcode" id="qrcode"></div>
+  <!-- partial:index.partial.html -->
+  <!-- started from this pen: https://codepen.io/supah/pen/zrQYyo -->
+  <body ng-app="RoomControl" ng-cloak>
+    <div layout="row" layout-align="center" ng-controller="AppCtrl" ng-cloak>
+      <div layout="column" class="flexContainer">
+        <div layout="row" layout-align="center center" class="flexContent" flex>
+          <div id="slider" class="rslider"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/jquery.roundslider/1.0/roundslider.min.js'></script>
+  <script src="./script.js"></script>
+</body>
+</html>

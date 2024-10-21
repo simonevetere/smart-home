@@ -1,0 +1,79 @@
+body {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.category {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 1.2em;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+
+.category i {
+    margin-right: 10px;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    background-color: #555;
+}
+
+.qrcode {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#redirect-dot {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 80px;  /* Aumenta la dimensione per contenere l'immagine */
+  height: 80px;
+  background-color: transparent;  /* Rendi lo sfondo trasparente */
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#redirect-dot img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#redirect-dot:hover {
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+  #redirect-dot {
+    width: 100px;  /* Aumenta la dimensione per contenere l'immagine */
+    height: 100px;
+  }
+}

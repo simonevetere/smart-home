@@ -29,7 +29,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     .then(response => {
         if (response.status === 200) {
             document.cookie = "user=" + username + "; path=/";
-            return response.text();
+            window.location.href = '/?version=1';
         } else {
             throw new Error('Unauthorized');
         }

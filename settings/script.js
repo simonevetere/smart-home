@@ -147,7 +147,7 @@ function selectLanguage(language) {
     listItem.addEventListener('click', () => {
       // Salva la voce selezionata nel local storage
       localStorage.setItem('selectedVoice', voice);
-      window.location.href='/home'
+      window.location.href='/?version=1'
 
       // Esegui l'azione desiderata con la voce selezionata
       // Ad esempio, riproduci un messaggio audio
